@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natraj-X Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Black background */
+            overflow: hidden; /* Prevent overflow artifacts */
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white; /* White text */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .x-letter {
+            font-size: 1550px; /* Size of "X" */
+            font-weight: bold;
+            position: relative;
+            animation: shrinkX 3s forwards; /* Shrink animation */
+        }
+
+        .natraj {
+            font-size: 260px; /* Adjust size of "NATRAJ" */
+            font-weight: normal;
+            position: absolute;
+            background-color: #000; /* Black background */
+            color: white; /* Text color */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            letter-spacing: 5px;
+            opacity: 0; /* Initially hidden */
+            animation: fadeInNatraj 2s 3s forwards; /* Fade-in animation */
+            padding: 1px; /* Add padding */
+            line-height: 1; /* Match line height to font size */
+            height: calc(260px + 1px); /* Adjust height to match font size + padding */
+        }
+
+        @keyframes shrinkX {
+            0% {
+                transform: scale(20); /* Start from a very large scale */
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1); /* Shrink to normal size */
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInNatraj {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="x-letter">X</div>
+        <div class="natraj">NATRAJ</div>
+    </div>
+</body>
+</html>
